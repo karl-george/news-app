@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import News from './Components/News';
 
 function App() {
   const [data, setData] = useState([]);
@@ -12,7 +13,11 @@ function App() {
       .then((data) => setData(data));
   }, []);
 
-  return <div className='App'></div>;
+  return (
+    <div className='App'>
+      <News newsData={data} />
+    </div>
+  );
 }
 
 export default App;
