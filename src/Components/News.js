@@ -4,7 +4,7 @@ import NewsCard from './NewsCard';
 
 const News = () => {
   return (
-    <div>
+    <div className='news'>
       <Header />
       <Hero />
       <NewsCard />
