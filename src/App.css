@@ -1,3 +1,24 @@
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* Base Styles */
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.news {
+  background-color: #24272e;
+  color: #eaeae8;
   text-align: center;
+  padding: 2rem;
 }
