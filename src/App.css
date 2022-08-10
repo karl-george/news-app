@@ -8,11 +8,31 @@ p {
   margin: 0;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+/* Containers & Grids */
+.container {
+  margin: 0 auto;
+  max-width: 820px;
+  padding: 2rem;
+}
+
 /* Base Styles */
 .App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
 }
 
@@ -20,5 +40,27 @@ p {
   background-color: #24272e;
   color: #eaeae8;
   text-align: center;
-  padding: 2rem;
+}
+
+/* Header */
+header {
+  padding: 3rem 0 5rem;
+  text-align: left;
+}
+
+header h2 {
+  font-size: 2rem;
+}
+
+/* Hero */
+.hero-img-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero-img-wrapper h3 {
+  position: absolute;
+  margin-bottom: 2rem;
 }

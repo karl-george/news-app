@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import News from './Components/News';
+import Loading from './Components/Loading';
 
 function App() {
   const [data, setData] = useState([]);
@@ -15,7 +16,11 @@ function App() {
 
   return (
     <div className='App'>
-      <News newsData={data} />
+      {typeof data.articles != 'undefined' ? (
+        <News newsData={data} />
+      ) : (
+        <Loading />
+      )}
     </div>
   );
 }
