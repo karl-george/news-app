@@ -3,7 +3,7 @@ import Hero from './Hero';
 import NewsCard from './NewsCard';
 
 const News = ({ newsData }) => {
-  const newsArticles = newsData.articles.slice(9);
+  const newsArticles = newsData.articles.slice(1, 10);
 
   const newsElements = newsArticles.map((item) => {
     return <NewsCard article={item} />;

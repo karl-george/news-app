@@ -1,14 +1,12 @@
 import formatTitle from '../Utils/formatTitle';
 
 const NewsCard = ({ article }) => {
-  const trimTitle = formatTitle(article.title);
+  const formattedTitle = formatTitle(article.title);
 
   return (
     <div className='news-card container'>
-      <div className='grid grid--1x2'>
-        <img src={article.urlToImage}></img>
-        <h3>{trimTitle}</h3>
-      </div>
+      <img src={article.urlToImage} className='news-card-img'></img>
+      <h3>{formattedTitle}</h3>
     </div>
   );
 };
