@@ -2,17 +2,19 @@ import Header from './Header';
 import Hero from './Hero';
 import NewsCard from './NewsCard';
 
-const News = ({ newsData }) => {
-  const newsArticles = newsData.articles.slice(1, 10);
+const News = ({ newsData, toggleFavourite }) => {
+  const newsArticles = newsData.articles.slice(0, 10);
 
   const newsElements = newsArticles.map((item) => {
     return <NewsCard article={item} />;
   });
 
+  console.log(newsData);
+
   return (
     <div className='news'>
       <Header />
-      <Hero newsData={newsData} />
+      {/* <Hero newsData={newsData} /> */}
       {newsElements}
     </div>
   );

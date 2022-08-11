@@ -1,4 +1,3 @@
-* Add Source for all articles
-* Add favourite functionality using filled and unfilled hearts
+* Add Tablet and Desktop styles
 * Add React Router for viewing individual news articles
 * Add nav bar for swapping between ALL, Business etc

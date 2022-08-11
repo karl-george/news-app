@@ -64,6 +64,11 @@ header h2 {
 }
 
 /* News Card */
+.news-card {
+  border-bottom: 1px solid rgb(165, 165, 165);
+  margin-bottom: 2rem;
+}
+
 .news-card-img {
   border-radius: 5px;
   margin-top: -1rem;
@@ -74,5 +79,4 @@ header h2 {
   margin-top: 1rem;
   font-size: 2rem;
   padding-bottom: 3rem;
-  border-bottom: 1px solid rgb(165, 165, 165);
 }
