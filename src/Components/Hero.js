@@ -1,7 +1,7 @@
-import splitTitle from '../Utils/splitTitle';
+import formatTitle from '../Utils/formatTitle';
 
 const Hero = ({ newsData }) => {
-  const title = splitTitle(newsData.articles[0].title);
+  const title = formatTitle(newsData.articles[0].title);
 
   return (
     <div className='hero container'>
