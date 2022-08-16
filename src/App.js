@@ -6,7 +6,7 @@ import Loading from './Components/Loading';
 function App() {
   const [data, setData] = useState([]);
 
-  const url = `https://newsapi.org/v2/top-headlines?country=se&apiKey=${process.env.REACT_APP_API_KEY}`;
+  const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_API_KEY}`;
 
   useEffect(() => {
     fetch(url)

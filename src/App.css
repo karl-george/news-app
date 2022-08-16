@@ -32,6 +32,21 @@ img {
   padding: 2rem;
 }
 
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .grid--1x4 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
 /* Base Styles */
 .App {
   margin: 0 auto;
@@ -61,6 +76,7 @@ header h2 {
 
 .hero-img {
   border-radius: 5px;
+  max-height: 160px;
 }
 
 .hero-img-wrapper h3 {
@@ -88,12 +104,24 @@ header h2 {
 }
 
 @media screen and (min-width: 424px) {
+  .hero-img {
+    max-height: 200px;
+  }
+
   .news-card-img {
     max-height: 200px;
   }
 }
 
 @media screen and (min-width: 767px) {
+  .hero-img {
+    max-height: 100%;
+  }
+
+  .hero-img-wrapper h3 {
+    font-size: 2.7rem;
+  }
+
   .news-card-img {
     max-height: 100%;
   }

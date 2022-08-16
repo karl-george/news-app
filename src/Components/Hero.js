@@ -3,8 +3,6 @@ import formatTitle from '../Utils/formatTitle';
 const Hero = ({ newsData }) => {
   const title = formatTitle(newsData.articles[0].title);
 
-  console.log(newsData);
-
   return (
     <div className='hero container'>
       <div className='hero-img-wrapper'>
