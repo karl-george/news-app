@@ -13,7 +13,7 @@ const News = ({ newsData }) => {
     <div className='news'>
       <Header />
       <Hero newsData={newsData} />
-      <div class='grid grid--1x4'>{newsElements}</div>
+      <div class='grid grid--1x4 container'>{newsElements}</div>
     </div>
   );
 };
