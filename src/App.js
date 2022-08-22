@@ -1,27 +1,18 @@
-import { useEffect, useState } from 'react';
 import './App.css';
 import News from './Components/News';
-import Loading from './Components/Loading';
+import NewsDetails from './Components/NewsDetails';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
-  const [data, setData] = useState([]);
-
-  const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_API_KEY}`;
-
-  useEffect(() => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => setData(data));
-  }, []);
-
   return (
-    <div className='App'>
-      {typeof data.articles != 'undefined' ? (
-        <News newsData={data} />
-      ) : (
-        <Loading />
-      )}
-    </div>
+    <Router>
+      <div className='App'>
+        <Routes>
+          <Route path='/' element={<News />} />
+          <Route path='/article/:idx' element={<NewsDetails />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
