@@ -4,9 +4,9 @@ import Hero from './Hero';
 import NewsCard from './NewsCard';
 import Loading from './Loading';
 
-const News = ({}) => {
+const Sport = ({}) => {
   const { data: newsData, loading } = useFetchAPI(
-    `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_API_KEY}`
+    `https://newsapi.org/v2/top-headlines?country=us&category=sport&apiKey=${process.env.REACT_APP_API_KEY}`
   );
 
   if (loading)
@@ -30,4 +30,4 @@ const News = ({}) => {
   );
 };
 
-export default News;
+export default Sport;

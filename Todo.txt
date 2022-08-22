@@ -1,2 +1,0 @@
-* Add React Router for viewing individual news articles
-* Add nav bar for swapping between ALL, Business etc
