@@ -1,10 +1,9 @@
 import useFetchAPI from '../Utils/useFetchAPI';
-import Header from './Header';
 import Hero from './Hero';
 import NewsCard from './NewsCard';
 import Loading from './Loading';
 
-const Sport = ({}) => {
+const Sport = () => {
   const { data: newsData, loading } = useFetchAPI(
     `https://newsapi.org/v2/top-headlines?country=us&category=sport&apiKey=${process.env.REACT_APP_API_KEY}`
   );
