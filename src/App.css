@@ -107,6 +107,10 @@ a {
   cursor: pointer;
 }
 
+.nav-bar nav ul li :hover {
+  color: rgb(165, 165, 165);
+}
+
 /* Hero */
 .hero {
   border-bottom: 1px solid rgb(165, 165, 165);

@@ -18,7 +18,7 @@ const Sport = () => {
   const newsArticles = newsData.articles.slice(1, 9);
 
   const newsElements = newsArticles.map((item, idx) => {
-    return <NewsCard article={item} idx={idx} />;
+    return <NewsCard article={item} idx={idx} key={idx} />;
   });
 
   return (
